@@ -13,7 +13,7 @@ export const Patient = (props) => {
     else patientType = "primary";
     
     var buttonClassName = "btn btn-sm btn-" + patientType;
-    var listClassName = "list-group-item d-flex justify-content-between list-group-item-" + patientType;
+    var listClassName = "list-group-item-action list-group-item d-flex justify-content-between list-group-item-" + patientType;
     
 
     var { dispatch } = useContext(AppContext);
@@ -25,8 +25,7 @@ export const Patient = (props) => {
     }
 
   return (
-    <li className={listClassName}
-    data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+    <li className={listClassName}>
         {fullName}
         <button type="button" 
             key={props.id} 
