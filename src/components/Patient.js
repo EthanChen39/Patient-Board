@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
+
 import { AppContext } from '../context/AppContext';
 
-
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 
 export const Patient = (props) => {
     var fullName = props.firstName + " " + props.lastName;
@@ -24,12 +25,13 @@ export const Patient = (props) => {
     }
 
   return (
-    <li className={listClassName}>
+    <li className={listClassName}
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
         {fullName}
         <button type="button" 
             key={props.id} 
             id={props.id} 
-            className={buttonClassName} 
+            className={buttonClassName}
             onClick={handleClick}>
                 Remove
         </button>
