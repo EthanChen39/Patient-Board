@@ -2,9 +2,10 @@ import React, { useContext } from 'react'
 
 import { AppContext } from '../context/AppContext';
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-
 export const Patient = (props) => {
+    
+
+
     var fullName = props.firstName + " " + props.lastName;
     var patientType;
     
