@@ -29,7 +29,10 @@ const initialState = {
         {id: uuidv4(), firstName: "Christina", lastName: "Hansen", age: 18, emergencyStatus: "YELLOW"},
         {id: uuidv4(), firstName: "Roger", lastName: "Randall", age: 67, emergencyStatus: "YELLOW"},
         {id: uuidv4(), firstName: "Nicholas", lastName: "Mendoza", age: 55, emergencyStatus: "YELLOW"},
-        {id: uuidv4(), firstName: "Tyler", lastName: "Gutierrez", age: 34, emergencyStatus: "RED"},
+        {id: uuidv4(), firstName: "Dwight", lastName: "Long", age: 34, emergencyStatus: "RED"},
+        {id: uuidv4(), firstName: "Erin", lastName: "Day", age: 21, emergencyStatus: "BLUE"},
+        {id: uuidv4(), firstName: "Alyssa", lastName: "Howell", age: 12, emergencyStatus: "BLUE"},
+        {id: uuidv4(), firstName: "Rekha", lastName: "Gatty", age: 11, emergencyStatus: "RED"},
     ],
 };
 

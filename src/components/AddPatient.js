@@ -31,7 +31,6 @@ export const AddPatient = () => {
     setFirstName("");
     setLastName("");
     setAge("");
-    setEmergencyStatus("RED");
   };
 
   return (

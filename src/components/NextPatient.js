@@ -38,7 +38,7 @@ export const NextPatient = () => {
   return (
     <div className='row row-cols-auto mt-4'>
         
-        <span className='col'><h3 className='mt-4'>Next Patient: {nextPatient === NaN ? "None" : nextPatient.firstName + " " + nextPatient.lastName}</h3></span>
+        <span className='col'><h3 className='mt-4'>Next Patient: {nextPatient.firstName === undefined ? "None" : nextPatient.firstName + " " + nextPatient.lastName}</h3></span>
 
         <button type="button" 
                 className='col-1 ms-2 my-3 btn btn-success'
